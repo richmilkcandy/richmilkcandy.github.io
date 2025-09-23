@@ -1,0 +1,307 @@
+<!doctype html> <html lang="zh-Hant"> <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width,initial-scale=1"> <title>霍格華茲性格測驗</title> <style> body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "PingFang TC", "Microsoft JhengHei", Arial, sans-serif; background:#f6f7fb; color:#222; padding:20px; } .container { max-width:900px; margin:0 auto; background:#fff; border-radius:8px; padding:22px; box-shadow:0 6px 18px rgba(25,40,70,0.08); } h1 { margin:0 0 12px; font-size:22px; } p.lead { color:#555; margin-top:0; } .question { margin:18px 0; padding:12px; border-radius:6px; background:#fbfcff; border:1px solid #eef2ff; } .q-title { font-weight:600; margin-bottom:8px; } label.choice { display:block; margin:6px 0; cursor:pointer; padding:8px; border-radius:6px; } label.choice:hover { background:#f0f6ff; } input[type="radio"] { margin-right:10px; } .actions { margin-top:18px; } button { background:#3b82f6; color:#fff; border:none; padding:10px 14px; border-radius:6px; cursor:pointer; font-weight:600; } button.secondary { background:#e5e7eb; color:#111; margin-left:10px; } .result { margin-top:20px; padding:16px; border-radius:8px; background: linear-gradient(180deg,#fff,#fbfdff); border:1px solid #dbeafe; } .type-title { font-size:20px; margin:0 0 6px; } .type-sub { color:#555; margin:0 0 12px; } .hidden { display:none; } .note { color:#666; font-size:13px; margin-top:8px; } footer { margin-top:18px; font-size:12px; color:#888; text-align:center; } @media (max-width:520px){ .container { padding:14px; } .bg-img { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none; z-index: -1; max-width: none; min-width: 100%; min-height: 100%; width: auto; height: auto; } .content { position: relative; z-index: 1; min-height:100vh; display:flex; align-items:center; justify-content:center; } } .bg-img { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none; z-index: -1; max-width: none; min-width: 100%; min-height: 100%; width: auto; height: auto; opacity:0.12; } </style> </head> <body>
+
+<img class="bg-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6XHQwbaofkytLva5iZ-QQ9QP_DRbHciqSTWSeKC0lQ27VLuht1QzCJDjilaIZKrX7mheIlI_7F8PJZOsJAfs1zYGtIKxBOU36_3qlwNKddjIApkFdmr6hHneiGZBXvENYjjNdbYNffUm1e_e6zAxVZDDEMVCkeQavnDYu_mXvFlnq4DnMmTetyYwoXgk7/s16000/%E5%90%8D%E7%A7%B0%E6%9C%AA%E8%A8%AD%E5%AE%9A%E3%81%AE%E3%83%86%E3%82%99%E3%82%B5%E3%82%99%E3%82%A4%E3%83%B3.png" alt="">
+
+<div class="container"> <h1>你是哪種霍格華茲學生？</h1> <p class="lead"> <center> <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXkXRxbX8mtart9WEgP32sUd3wcSBP2twepGiXy4XCz4dyqKcgLVP_9P1iVTCvU0Ud0t6BtxKmHST81mVUOXE2mikbksqro1KzIrzjK10zLH474rbKN96_pM9zRF51uy3NKLTZ_Bi57PMzFW9ULXhWnRSX4m1pq5_cG5Mj_pcrIPi7jphwurAUSmkK8bMU/s1152/magic2.gif" width="50%"> </center> </p>
+
+<p>
+  充滿魔法與奇幻的世界，有許多神奇的生物、魔法咒語、魔杖、飛天掃帚、魔法學校以及各種神秘的魔法物品。無人不識的巫師學院——霍格華茲魔法與巫術學院，是一個巨大的古老城堡，教授變形、魔藥、黑魔法防禦等課程。<br>
+這個世界充滿了冒險與奇蹟，也有黑暗與危險，巫師必須團結一致，用智慧與勇氣來守護這個神奇的魔法世界。
+</p>
+
+<form id="quizForm">
+  <!-- Q1 -->
+  <div class="question">
+    <div class="q-title">1. 你今晚就要過十一歲生日了。</div>
+    <label class="choice"><input type="radio" name="q1" value="Reformer"> 你早就知道魔法世界的故事，鄧不利多、哈利波特、尼樂·勒梅，都令人神往。你迫不及待要進入霍格華茲魔法與巫術學院學習，而且在今天前又把《霍格華茲，一段歷史》重讀了一次。 </label>
+    <label class="choice"><input type="radio" name="q1" value="Helper"> 你心中七上八下，不知道自己有沒有資格進入霍格華茲魔法與巫術學院，因為爸媽和親朋好友都對你有很大期望，常常叫你有點信心，但你從未展示過魔法，真不想令他們失望。 </label>
+    <label class="choice"><input type="radio" name="q1" value="Achiever"> 你迫不及待要進入霍格華茲魔法與巫術學院，肯定自己一定可以成為當世最強的巫師，獲得成功。 </label>
+  </div>
+
+  <!-- Q2 -->
+  <div class="question">
+    <div class="q-title">2. 你走進王十字車站，準備搭乘霍格華茲特快列車。</div>
+    <label class="choice"><input type="radio" name="q2" value="Helper"> 你看到另一個小朋友獨自一人推著行李東張西望，表情困擾，走過去想教教他走入九又四份之三月台的方法。 </label>
+    <label class="choice"><input type="radio" name="q2" value="Loyalist"> 你仔細觀察其他人進入九又四份之三月台的方法，想先肯定自己的理解沒有錯。 </label>
+    <label class="choice"><input type="radio" name="q2" value="Enthusiast"> 你迫不及待衝上九又四份之三月台，想體驗穿過牆壁是甚麼感覺，看看火車是甚麼樣子。 </label>
+  </div>
+
+  <!-- Q3 -->
+  <div class="question">
+    <div class="q-title">3. 你要找車廂坐下，會選哪個位置呢？</div>
+    <label class="choice"><input type="radio" name="q3" value="Individualist"> 視乎心情，隨心而坐。 </label>
+    <label class="choice"><input type="radio" name="q3" value="Investigator"> 你要安安靜靜預習教科書。 </label>
+    <label class="choice"><input type="radio" name="q3" value="Loyalist"> 看看別人都是怎樣選位置之後再決定。 </label>
+  </div>
+
+  <!-- Q4 -->
+  <div class="question">
+    <div class="q-title">4. 頂著分類帽，一頂古老、破爛並且會說話的帽子，你心心念念要進一個學院。終於，分類帽大聲宣佈，你進入了理想的學院。</div>
+    <label class="choice"><input type="radio" name="q4" value="Enthusiast"> 太好了，這是最有趣的學院！有太多冒險和新奇好玩的事在等著你呢！ </label>
+    <label class="choice"><input type="radio" name="q4" value="Challenger"> 太好了，這個學院可以讓你步向成功！貴族、豪富、強大的魔法師，你會成為其中一員。 </label>
+    <label class="choice"><input type="radio" name="q4" value="Peacemaker"> 太好了，你和新朋友進到同一個學院了。你剛才還在擔心和大家不一樣可怎麼辦呢！ </label>
+  </div>
+
+  <!-- Q5 -->
+  <div class="question">
+    <div class="q-title">5. 開始上課了，你最喜歡的學科是⋯⋯</div>
+    <label class="choice"><input type="radio" name="q5" value="Reformer"> 變形學，以理論為基礎，是練習、領悟力、掌控和精確的總和。 </label>
+    <label class="choice"><input type="radio" name="q5" value="Individualist"> 最期待占卜學！是超越魔法的魔法，可以超脫凡俗、俯勘世界、窺見未來。 </label>
+    <label class="choice"><input type="radio" name="q5" value="Enthusiast"> 當然是奇獸飼育學，可以接觸到各式各樣稀奇古怪的神奇生物！ </label>
+  </div>
+
+  <!-- Q6 -->
+  <div class="question">
+    <div class="q-title">6. 第一次騎飛天掃帚。</div>
+    <label class="choice"><input type="radio" name="q6" value="Helper"> 你一路鼓勵和支持旁邊不敢上掃帚的同學，犧牲自己的練習時間。 </label>
+    <label class="choice"><input type="radio" name="q6" value="Investigator"> 旁邊同學不敢上掃帚，你不斷對他講歷史中的飛天意外和書中看來的訣竅。 </label>
+    <label class="choice"><input type="radio" name="q6" value="Challenger"> 你騎上飛天掃帚，在全班之中第一個帶大家一飛衝天。 </label>
+  </div>
+
+  <!-- Q7 -->
+  <div class="question">
+    <div class="q-title">7. 突然宵禁！一隻爆角怪入侵城堡！爆角怪的角十分尖利，連金屬都可以刺穿，角尖有爆炸液，注入物體都會爆炸。</div>
+    <label class="choice"><input type="radio" name="q7" value="Achiever"> 你希望找到爆角怪，展示魔法實力制止牠，為自己的學院加分，得到教授的讚賞和同學的仰望。 </label>
+    <label class="choice"><input type="radio" name="q7" value="Loyalist"> 你想聽從教授的指示，但發現好朋友失蹤，因為擔心還是去找他了。 </label>
+    <label class="choice"><input type="radio" name="q7" value="Peacemaker"> 兩個朋友為了應不應該跑出去找爆角怪在吵架，你在中間拖拖拉拉，一路附和，只希望教授快點抓到爆角怪就好了。 </label>
+  </div>
+
+  <!-- Q8 -->
+  <div class="question">
+    <div class="q-title">8. 原來爆角怪是有人故意放進城堡的！</div>
+    <label class="choice"><input type="radio" name="q8" value="Reformer"> 你收集好證據，告訴教授，也會不客氣地指出犯人起碼觸犯了十三條校規。 </label>
+    <label class="choice"><input type="radio" name="q8" value="Investigator"> 你收集好證據，縱觀全局，嘗試分析犯人的目的和手段，再部署下一步。 </label>
+    <label class="choice"><input type="radio" name="q8" value="Peacemaker"> 犯人不一定有惡意的呀，應該先聽聽他的說法，幫他解決困難。 </label>
+  </div>
+
+  <!-- Q9 -->
+  <div class="question">
+    <div class="q-title">9. 你和朋友為了揭穿犯人，一直步步為營，但⋯⋯</div>
+    <label class="choice"><input type="radio" name="q9" value="Reformer"> 你的憤怒爆發了，為甚麼沒有人跟足標準完成任務？ </label>
+    <label class="choice"><input type="radio" name="q9" value="Loyalist"> 你已經反覆思考現有方案可能出現的不同問題，但還是遺漏了一個可能性。 </label>
+    <label class="choice"><input type="radio" name="q9" value="Challenger"> 犯人也非常難對付，你不甘示弱，要遇強愈強，打倒對方。 </label>
+  </div>
+
+  <!-- Q10 -->
+  <div class="question">
+    <div class="q-title">10. 你面對挫折，這一刻，你最需要的是⋯⋯</div>
+    <label class="choice"><input type="radio" name="q10" value="Helper"> 被愛的感覺。你一直為他人付出，他們感謝你、需要你，你在隊伍中不可或缺。 </label>
+    <label class="choice"><input type="radio" name="q10" value="Peacemaker"> 一時的平靜。在隊伍之中，不用提出意見，不用負責解決問題。 </label>
+    <label class="choice"><input type="radio" name="q10" value="Individualist"> 真正懂你的人。雖然你不夠完美，但有人接受這樣的你。 </label>
+  </div>
+
+  <!-- Q11 -->
+  <div class="question">
+    <div class="q-title">11. 解決爆角獸事件之後，終於開始考試了，你不斷努力，是為了⋯⋯</div>
+    <label class="choice"><input type="radio" name="q11" value="Individualist"> 讓喜歡的人注意和認同自己。 </label>
+    <label class="choice"><input type="radio" name="q11" value="Challenger"> 發揮才華，朝級長、學生主席、精英階層步步進發，得到更多權力。 </label>
+    <label class="choice"><input type="radio" name="q11" value="Achiever"> 達成更多目標，得到更多教授和同學認可。 </label>
+  </div>
+
+  <!-- Q12 -->
+  <div class="question">
+    <div class="q-title">12. 暑假終於到來。你和同學都要再搭霍格華茲特快列車回家去了⋯⋯</div>
+    <label class="choice"><input type="radio" name="q12" value="Achiever"> 你交出亮麗的成績表，得到父母親友的讚賞。 </label>
+    <label class="choice"><input type="radio" name="q12" value="Investigator"> 你有自己的空間，想在暑假做點研究，投入自己感興趣的事，希望得到更多知識。 </label>
+    <label class="choice"><input type="radio" name="q12" value="Enthusiast"> 你回到家也一路嘗試新鮮的事物，花園的地精、清潔咒、巫師棋、魁地奇，林林總總，探索樂趣無窮的魔法世界。 </label>
+  </div>
+
+  <div class="actions">
+    <button type="button" id="submitBtn">你是哪一種學生呢？</button>
+    <br><br>
+    <button type="button" id="resetBtn" class="secondary">重新填寫</button>
+  </div>
+</form>
+
+<div id="result" class="result hidden" aria-live="polite"></div>
+<div id="error" class="note hidden" style="color:#c00"></div>
+
+<footer></footer>
+
+  
+  
+
+</div>
+
+<script> (function(){ const form = document.getElementById('quizForm'); const submitBtn = document.getElementById('submitBtn'); const resetBtn = document.getElementById('resetBtn'); const resultEl = document.getElementById('result'); const errorEl = document.getElementById('error');
+
+// 必須給予一個變數名，否則後續程式會找不到 typeInfo
+const typeInfo = {
+  Loyalist: {
+    cn: "哈利·波特",
+    en: "Harry Potter",
+    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyztmaKWHIhIdDQLt93itSlRk0vF1uP5taFRVOBBYynvnTTTcZTVmhWXSv3vnb7OD91G_InuA_GsQp8UOCSto6u6sfvGF1nnfDlpkGECKbhqFwsKq0a1SjbvI_oV7gEx50mJp-G0W1R9puXAMcmHszZ-z6fRqVL6QcYn_XCyfFHV1SqIVbAm-s7a0Ryt9Q/s1920/20.png",
+    appearance: "外貌令人印象深刻，凌亂的黑髮，綠色眼睛，眼鏡，閃電形疤痕、瘦削，身材中等偏高、總穿學院長袍，間中有魁地奇裝備。",
+    personality: "性格人所共知，是勇敢、謙虛、衝動、固執、堅韌。",
+    motive: "因應情景不同，行動可能不一樣，但行事動機總離不開安全、忠誠與責任、害怕背叛與無備。依賴可信賴的盟友與導師，質疑權威，並展現勇氣作為對族群的承諾。",
+    outlook: "保護，責任、對制度持懷疑態度。",
+    achievement: "在鄧不利多的軍隊教授黑魔法防禦術、領導分靈體狩獵、自我犧牲、打敗佛地魔。"
+  },
+  Reformer: {
+    cn: "妙麗·格蘭傑",
+    en: "Hermione Granger",
+    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-LMdyiCZPN0RwCyEGInEKMUxVfcb3LeHjuahA8HlVHPZCo_yFe_IpVvUaGFnaRUKYa4Y2GFTDq3iEoxZ9dkIfa_km1WABoUZQy2MQCWMogAKdRuJN0Ms7TBE_P0Bf3QJIxvx-2Zj8A9esd2HkdFPTOAToBuEy7lsQ7Hz_rzMxrGj0tuVF7ZLBmeajok3o/s1920/magic2.png",
+    appearance: "外貌令人印象深刻，濃密的棕髮（有時較為整齊），棕色眼睛、起初有大前牙（後已縮小）、整齊的制服。",
+    personality: "性格人所共知，是勤奮、有原則、組織有序、富有同情心、要求嚴格。",
+    motive: "因應情景不同，行動可能不一樣，但行事動機總離不開渴望正確、道德且有用、害怕錯誤或腐敗。重視規則，追求完美，具道德熱忱，但在原則要求時會打破規則。",
+    outlook: "通過知識、規則和倫理改善世界。",
+    achievement: "頂尖學生、關鍵分靈體研究、拯救天狼星/布克比克、創立小精靈福進會、掌握重要咒語、訂立策略。"
+  },
+  Peacemaker: {
+    cn: "榮恩·衛斯理",
+    en: "Ron Weasley",
+    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqDEjFd_xJS89ZDIfldPRlNP60hWrGeLey6zd_JLcclqvK6P2crfp62r9PR7T3hOYvgcSSBra8Rh9zkHkw1O3nuHztmZZLDy4tqir3vOHy4G6NZYEd5oW9nMcNGth3n6Ezs5_wSQbW6W5rDZffq4j5qXGPbVFz1os17WNl5u8j2QaqWISBL34rhsknmnFK/s1920/22.png",
+    appearance: "外貌令人印象深刻，高瘦，有雀斑，鮮紅色頭髮，長鼻子、休閒裝，略顯邋遢。",
+    personality: "性格人所共知，是忠誠、幽默、隨和、在壓力下不安。",
+    motive: "因應情景不同，行動可能不一樣，但行事動機總離不開追求和諧與歸屬感、害怕衝突與疏離。性格隨和、能容忍，避免對抗，直到爆發，然後努力和解。",
+    outlook: "和諧與歸屬感。",
+    achievement: "國際象棋勝利、格蘭芬多守門員、摧毀分靈體、回歸和解。"
+  },
+  Investigator: {
+    cn: "阿不思·鄧不利多",
+    en: "Albus Dumbledore",
+    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhX8oPW5Yhy3MW1MekHYxEUrdPRCejlLNr2jwDS1S8wyixAc86ZXwd62bQbyvq_wQorBOjnBHge7tsrb-8Kx0FYneq5K7U4CW6FxyL3FnjhhVRrg8mHaZlwq04Tvbt549s7gZ9if7ua4uTTTDQCo8h2Ul4mpaniZJOWnYmyfKXezaSjP2QfHHGo5-eqWIuW/s1920/23.png",
+    appearance: "外貌令人印象深刻，非常高瘦、長銀髮和鬍鬚、藍色眼睛，戴半月眼鏡、優雅的彩色長袍。",
+    personality: "性格人所共知，是睿智、神秘、有同情心、秘密、多內向。",
+    motive: "因應情景不同，行動可能不一樣，但行事動機總離不開重視知識、策略與自給自足、害怕耗盡或被侵犯。觀察細膩、私密，保留資訊，從旁策劃長遠計畫。",
+    outlook: "知識為責任；長遠策略家。",
+    achievement: "擊敗蓋勒·葛林戴華德、領導鳳凰會、規劃實行分靈體狩獵。"
+  },
+  Individualist: {
+    cn: "賽佛勒斯·石內卜",
+    en: "Severus Snape",
+    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdXx7LLisFNIeKcEG2lSjJ-7QCOco9EwgdD_LdG0LaQhH6jOTYawn2k5UYbxqZsmqRbcYxFG3ltyMEOl4MSD2PfaVdEeDei96RQT5zJW2EY_kqV8E_H4mGqq_1Rdf7i2ja5Kt8B-EHppALMxUBwld2Z8dGviLx_RidktxQTFDmYP5gm1_woTuJn7liGPka/s1920/27.png",
+    appearance: "外貌令人印象深刻，蒼白的膚色、肩長黑髮，略顯蓬鬆、鉤狀鼻子、深色眼睛、飄逸的黑袍。",
+    personality: "性格人所共知，是強烈、諷刺、自豪、在冷峻外表下情感豐富。",
+    motive: "因應情景不同，行動可能不一樣，但行事動機總離不開渴望身份與意義、害怕平凡或沒有真我。熱烈、憂鬱，痛苦與理想化的愛，展現戲劇性、局外人角色。",
+    outlook: "痛苦、忠誠與秘密。",
+    achievement: "雙重間諜、保護哈利、破心術專家、發明咒語、執行計畫。"
+  },
+  Helper: {
+    cn: "魯霸·海格",
+    en: "Rubeus Hagrid",
+    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyl0YpbWMnZsCU0ySuLHMjnigl3-FInVrZW4dYlHWHBTQr7rT0mbkAYWJa6wQauH69NIa84E0psugklp7YYy8Fz0IuhX-0T4xVdWF9ekQ7mWMbYRyqSpMDu8fI7lUKLgX2V-e0gHLNtRf-3tlYmIx1tFZM-pny0sFoResF5YvMasXW47nV8wRqMWm8tzYo/s1920/28.png",
+    appearance: "外貌令人印象深刻，半巨人、巨大寬闊、狂野糾結的黑髮和鬍鬚、甲蟲黑眼睛、毛皮大衣，巨大的靴子。",
+    personality: "性格人所共知，是溫暖、多情、直率、偶爾魯莽。",
+    motive: "因應情景不同，行動可能不一樣，但行事動機總離不開希望被需要與愛著、害怕被拒絕。溫暖、慷慨地照顧學生與生物，過度付出，並在涉及情感時難以設限。",
+    outlook: "善待被誤解者。",
+    achievement: "引領哈利進入巫師世界、熱愛神奇生物、堅定的鳳凰會成員。"
+  },
+  Achiever: {
+    cn: "跩哥·馬份",
+    en: "Draco Malfoy",
+    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_isDMRVptVLfQF0p_T33-V0ZGoCTY6Ntn8tSkLvYASKHmOr90Xq6GRGn01aITJpv7zEZEu-4H9QAKG3-R7JEGN40AA9USYbF_GdV8msvchEFsj6XmGmJ-WOKPeDUPOfk9jJnnSGpmBLEQv6ESjMZCeMcB_ovVX9ggTr1S2IMso99dydBFz1vSUmY0vVJE/s1920/25.png",
+    appearance: "外貌令人印象深刻，蒼白，尖削的五官、光滑的白金色頭髮、冷灰色眼睛、整潔的制服、後來身高更高、更瘦。",
+    personality: "性格人所共知，是驕傲、機智、在意形象、矛盾。",
+    motive: "因應情景不同，行動可能不一樣，但行事動機總離不開追求地位與成功、害怕失敗與無價值。注重形象、具有競爭心，為家庭期待而表現，隱藏脆弱，為在社交圈中贏而調整自己。",
+    outlook: "地位，家庭認可。",
+    achievement: "狡猾、能幹，修復了萬應室裏的消失衣櫃作為食死人進入霍格華茲的入口、洗心革面。"
+  },
+  Challenger: {
+    cn: "佛地魔（湯姆·瑞斗）",
+    en: "Lord Voldemort",
+    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8UQ-dHIxhyhyphenhyphenW6KlOuMKJKGqdYVnvx_MkbU3dYPc1k1gwtZwg7mZ_tMZGI8B52J1ysgfRt88CNfxrTIvsqdpeL1tyPgV6gd8q8DjjBQ4lK3B9SK67uDV7G1UXa5H8LV0d8vJCD0gaaXXrQPf7dYxOkqblrRj4cuUpivBWj7i01Pd0dSqWs_8Q7U9HrvvD3_/s1920/26.png",
+    appearance: "外貌令人印象深刻，求學時期：英俊，有黑髮/黑眼睛、伏地魔時期：蒼白、禿頭、裂縫狀鼻孔、紅色眼睛、高大骨瘦如柴。",
+    personality: "性格人所共知，是支配欲強、冷酷、具有吸引力、偏執。",
+    motive: "因應情景不同，行動可能不一樣，但行事動機總離不開尋求控制與無敵感、害怕軟弱與被制服。支配並恐嚇他人，拒絕脆弱（甚至死亡），消除威脅以維持絕對權力。",
+    outlook: "權力，影響他人，改變環境、征服死亡。",
+    achievement: "創造多個分靈體、佔領魔法部與霍格華茲。"
+  },
+  Enthusiast: {
+    cn: "天狼星·布萊克",
+    en: "Sirius Black",
+    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEia133Gc-4Kf7XkNyF_ZBeH3e096h5Co4EWqqmwr36m3gruynJlDJpEpFazLJsgKegWqUYpRj2r7_kVKLgkGLJs69kngFljdSmQIWTl1ctD9M4U2NjlS9o7EVSdr0SEPMz2l4Flh0HAlYZ2gm4Eg_aJ20Njb4Day6ENWVmZGvF7h_I7ZWehkA6CQBams907/s1920/24.png",
+    appearance: "外貌令人印象深刻，高而瘦、英俊，高顴骨、灰色眼睛、長黑髮、入獄後變得憔悴，之後仍稍顯襤褸。",
+    personality: "性格人所共知，是大膽、機智、難以安定、衝動、忠誠如鐵。",
+    motive: "因應情景不同，行動可能不一樣，但行事動機總離不開渴望自由、選擇與刺激、害怕陷入痛苦。衝動反叛，用幽默與行動來逃避不適，並在受限制或束縛下感到不安。",
+    outlook: "追求自由不從眾、拒絕傳統家庭信念、價值觀和社會期望。",
+    achievement: "未登記的化獸師、逃出阿茲卡班、重要鳳凰會成員、哈利的導師、戰死於戰鬥。"
+  }
+};
+
+function getSelections(){
+  const data = new FormData(form);
+  const answers = [];
+  for (let i = 1; i <= 12; i++){
+    answers.push(data.get('q' + i));
+  }
+  return answers;
+}
+
+function allAnswered(answers){
+  return answers.every(v => v !== null);
+}
+
+function tally(answers){
+  const counts = {};
+  for (const t in typeInfo) counts[t] = 0;
+  answers.forEach(v => {
+    if (v && counts.hasOwnProperty(v)) counts[v]++;
+  });
+  return counts;
+}
+
+function pickTop(counts){
+  let topKey = null;
+  let topVal = -1;
+  const order = Object.keys(typeInfo);
+  for (const key of order){
+    const val = counts[key] || 0;
+    if (val > topVal){
+      topVal = val;
+      topKey = key;
+    }
+  }
+  return topKey;
+}
+
+submitBtn.addEventListener('click', function(){
+  errorEl.classList.add('hidden');
+  resultEl.classList.add('hidden');
+
+  const answers = getSelections();
+  if (!allAnswered(answers)){
+    errorEl.textContent = '請回答所有題目後再送出。';
+    errorEl.classList.remove('hidden');
+    return;
+  }
+
+  const counts = tally(answers);
+  const top = pickTop(counts);
+  if (!top){
+    errorEl.textContent = '無法判定結果，請重試。';
+    errorEl.classList.remove('hidden');
+    return;
+  }
+
+  const info = typeInfo[top] || {};
+  const imgHtml = info.img ? '<div style="margin-top:10px;text-align:center;"><img src="' + info.img + '" alt="' + (info.cn || top) + '" style="max-width:48%;height:auto;border-radius:6px;"></div>' : '';
+
+  const html = ''
+    + '<div class="type-title">' + (info.cn || top) + ' — ' + (info.en || '') + '</div>'
++ imgHtml
+    + '<div style="margin-top:8px;"><strong> </strong><div style="color:#444;margin-top:6px;">' + (info.appearance || '') + '</div></div>'
+    + '<div style="margin-top:10px;"><strong>自己的至高原則 </strong><div style="color:#444;margin-top:6px;">' + (info.outlook || '') + '</div></div>'
+    + '<div style="margin-top:10px;"><strong> </strong><div style="color:#444;margin-top:6px;">' + (info.motive || '') + '</div></div>'
+
+    + '<div style="margin-top:10px;"><strong> </strong><div style="color:#444;margin-top:6px;">' + (info.personality || '') + '</div></div>'
+    + '<div style="margin-top:10px;"><strong>最為人所知的成就 </strong><div style="color:#444;margin-top:6px;">' + (info.achievement || '') + '</div></div>'
+    ;
+
+  resultEl.innerHTML = html;
+  resultEl.classList.remove('hidden');
+  resultEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+});
+
+resetBtn.addEventListener('click', function(){
+  form.reset();
+  resultEl.classList.add('hidden');
+  errorEl.classList.add('hidden');
+});
+
+  
+  
+
+})(); </script>
+
+</body> </html>
