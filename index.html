@@ -1,13 +1,14 @@
 <!doctype html> <html lang="zh-Hant"> <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width,initial-scale=1"> <title>霍格華茲性格測驗</title> <style> body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "PingFang TC", "Microsoft JhengHei", Arial, sans-serif; background:#f6f7fb; color:#222; padding:20px; } .container { max-width:900px; margin:0 auto; background:#fff; border-radius:8px; padding:22px; box-shadow:0 6px 18px rgba(25,40,70,0.08); } h1 { margin:0 0 12px; font-size:22px; } p.lead { color:#555; margin-top:0; } .question { margin:18px 0; padding:12px; border-radius:6px; background:#fbfcff; border:1px solid #eef2ff; } .q-title { font-weight:600; margin-bottom:8px; } label.choice { display:block; margin:6px 0; cursor:pointer; padding:8px; border-radius:6px; } label.choice:hover { background:#f0f6ff; } input[type="radio"] { margin-right:10px; } .actions { margin-top:18px; } button { background:#3b82f6; color:#fff; border:none; padding:10px 14px; border-radius:6px; cursor:pointer; font-weight:600; } button.secondary { background:#e5e7eb; color:#111; margin-left:10px; } .result { margin-top:20px; padding:16px; border-radius:8px; background: linear-gradient(180deg,#fff,#fbfdff); border:1px solid #dbeafe; } .type-title { font-size:20px; margin:0 0 6px; } .type-sub { color:#555; margin:0 0 12px; } .hidden { display:none; } .note { color:#666; font-size:13px; margin-top:8px; } footer { margin-top:18px; font-size:12px; color:#888; text-align:center; } @media (max-width:520px){ .container { padding:14px; } .bg-img { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none; z-index: -1; max-width: none; min-width: 100%; min-height: 100%; width: auto; height: auto; } .content { position: relative; z-index: 1; min-height:100vh; display:flex; align-items:center; justify-content:center; } } .bg-img { position: fixed; top: 0%; left: 0%; transform: translate(0%, 0%); pointer-events: none; z-index: -1; max-width: none; min-width: 100%; min-height: 100%; width: auto; height: auto; opacity:0.12; } </style> </head> <body>
 
-<img class="bg-img" src="backi.png" alt="">
 
-<div class="container"> <h1>你是哪種霍格華茲學生？</h1> <p class="lead"> <center> <img src="magic.gif" width="25%"> </center> </p>
+<div class="container"> <h1>你是哪種霍格華茲學生？</h1> 
+  <p class="lead"> <center> <img src="backi.png" width="25%"> </center> </p>
 
 <p>
   充滿魔法與奇幻的世界，有許多神奇的生物、魔法咒語、魔杖、飛天掃帚、魔法學校以及各種神秘的魔法物品。無人不識的巫師學院——霍格華茲魔法與巫術學院，是一個巨大的古老城堡，教授變形、魔藥、黑魔法防禦等課程。<br>
 這個世界充滿了冒險與奇蹟，也有黑暗與危險，巫師必須團結一致，用智慧與勇氣來守護這個神奇的魔法世界。
 </p>
+  <p class="lead"> <center> <img src="magic.gif" width="25%"> </center> </p>
 
 <form id="quizForm">
   <!-- Q1 -->
@@ -107,7 +108,7 @@
   </div>
 
   <div class="actions">
-    <button type="button" id="submitBtn">你是哪一種學生呢？</button>
+    <button type="button" id="submitBtn">你會是怎樣的巫師呢？</button>
     <br><br>
     <button type="button" id="resetBtn" class="secondary">重新填寫</button>
   </div>
@@ -135,35 +136,35 @@ const typeInfo = {
     personality: "性格人所共知，是勇敢、謙虛、衝動、固執、堅韌。",
     motive: "因應情景不同，行動可能不一樣，但行事動機總離不開安全、忠誠與責任、害怕背叛與無備。依賴可信賴的盟友與導師，質疑權威，並展現勇氣作為對族群的承諾。",
     outlook: "保護，責任、對制度持懷疑態度。",
-    achievement: "在鄧不利多的軍隊教授黑魔法防禦術、領導分靈體狩獵、自我犧牲、打敗佛地魔。"
+    achievement: "在鄧不利多的軍隊（DA）教授黑魔法防禦術、領導分靈體狩獵、自我犧牲、打敗佛地魔。"
   },
   Reformer: {
     cn: "妙麗·格蘭傑",
     en: "Hermione Granger",
     img: "r1h.png",
-    appearance: "外貌令人印象深刻，濃密的棕髮（有時較為整齊），棕色眼睛、起初有大前牙（後已縮小）、整齊的制服。",
+    appearance: "外貌令人印象深刻，濃密的棕髮（當然重要時候會整理得滑順），棕色眼睛、起初有大前牙（後已縮小）、整齊的制服。",
     personality: "性格人所共知，是勤奮、有原則、組織有序、富有同情心、要求嚴格。",
     motive: "因應情景不同，行動可能不一樣，但行事動機總離不開渴望正確、道德且有用、害怕錯誤或腐敗。重視規則，追求完美，具道德熱忱，但在原則要求時會打破規則。",
     outlook: "通過知識、規則和倫理改善世界。",
-    achievement: "頂尖學生、關鍵分靈體研究、拯救天狼星/布克比克、創立小精靈福進會、掌握重要咒語、訂立策略。"
+    achievement: "頂尖學生、策略家、摧毀分靈體的關鍵人物、拯救天狼星和巴嘴、創立小精靈福進會。"
   },
   Peacemaker: {
     cn: "榮恩·衛斯理",
     en: "Ron Weasley",
-    img: "r9r",
+    img: "r9r.png",
     appearance: "外貌令人印象深刻，高瘦，有雀斑，鮮紅色頭髮，長鼻子、休閒裝，略顯邋遢。",
-    personality: "性格人所共知，是忠誠、幽默、隨和、在壓力下不安。",
+    personality: "性格人所共知，是忠誠、幽默、隨和，但在壓力下不安。",
     motive: "因應情景不同，行動可能不一樣，但行事動機總離不開追求和諧與歸屬感、害怕衝突與疏離。性格隨和、能容忍，避免對抗，直到爆發，然後努力和解。",
     outlook: "和諧與歸屬感。",
-    achievement: "國際象棋勝利、格蘭芬多守門員、摧毀分靈體、回歸和解。"
+    achievement: "國際象棋勝利、格蘭芬多守門員、摧毀分靈體、回歸和解、忠誠勇敢的好朋友。"
   },
   Investigator: {
     cn: "阿不思·鄧不利多",
     en: "Albus Dumbledore",
     img: "r5d.png",
     appearance: "外貌令人印象深刻，非常高瘦、長銀髮和鬍鬚、藍色眼睛，戴半月眼鏡、優雅的彩色長袍。",
-    personality: "性格人所共知，是睿智、神秘、有同情心、秘密、多內向。",
-    motive: "因應情景不同，行動可能不一樣，但行事動機總離不開重視知識、策略與自給自足、害怕耗盡或被侵犯。觀察細膩、私密，保留資訊，從旁策劃長遠計畫。",
+    personality: "性格人所共知，是睿智、神秘、有同情心、秘密、內向。",
+    motive: "因應情景不同，行動可能不一樣，但行事動機總離不開重視知識、策略與自給自足、害怕意志消磨。觀察細膩、私密，保留資訊，從旁策劃長遠計畫。",
     outlook: "知識為責任；長遠策略家。",
     achievement: "擊敗蓋勒·葛林戴華德、領導鳳凰會、規劃實行分靈體狩獵。"
   },
@@ -171,19 +172,19 @@ const typeInfo = {
     cn: "賽佛勒斯·石內卜",
     en: "Severus Snape",
     img: "r4s.png",
-    appearance: "外貌令人印象深刻，蒼白的膚色、肩長黑髮，略顯蓬鬆、鉤狀鼻子、深色眼睛、飄逸的黑袍。",
+    appearance: "外貌令人印象深刻，蒼白的膚色、肩長黑髮，明顯的鷹鈎鼻、深色眼睛、飄逸的黑袍。",
     personality: "性格人所共知，是強烈、諷刺、自豪、在冷峻外表下情感豐富。",
-    motive: "因應情景不同，行動可能不一樣，但行事動機總離不開渴望身份與意義、害怕平凡或沒有真我。熱烈、憂鬱，痛苦與理想化的愛，展現戲劇性、局外人角色。",
+    motive: "因應情景不同，行動可能不一樣，但行事動機總離不開渴望身份與意義、害怕平凡或沒有真我。展現熱烈、憂鬱，痛苦與理想化的愛，同時有戲劇性、局外人角色。",
     outlook: "痛苦、忠誠與秘密。",
-    achievement: "雙重間諜、保護哈利、破心術專家、發明咒語、執行計畫。"
+    achievement: "雙重間諜、保護哈利、破心術專家、咒語發明家、計畫執行者。"
   },
   Helper: {
     cn: "魯霸·海格",
     en: "Rubeus Hagrid",
     img: "r2h.png",
-    appearance: "外貌令人印象深刻，半巨人、巨大寬闊、狂野糾結的黑髮和鬍鬚、甲蟲黑眼睛、毛皮大衣，巨大的靴子。",
+    appearance: "外貌令人印象深刻，半巨人、巨大寬闊，有狂野糾結的黑髮和鬍鬚、甲蟲黑眼睛，穿毛皮大衣、巨大的靴子。",
     personality: "性格人所共知，是溫暖、多情、直率、偶爾魯莽。",
-    motive: "因應情景不同，行動可能不一樣，但行事動機總離不開希望被需要與愛著、害怕被拒絕。溫暖、慷慨地照顧學生與生物，過度付出，並在涉及情感時難以設限。",
+    motive: "因應情景不同，行動可能不一樣，但行事動機總離不開希望被需要與愛著、害怕被拒絕。溫暖、慷慨地照顧學生與生物，過度付出，並在涉及情感時難以自制。",
     outlook: "善待被誤解者。",
     achievement: "引領哈利進入巫師世界、熱愛神奇生物、堅定的鳳凰會成員。"
   },
@@ -195,25 +196,25 @@ const typeInfo = {
     personality: "性格人所共知，是驕傲、機智、在意形象、矛盾。",
     motive: "因應情景不同，行動可能不一樣，但行事動機總離不開追求地位與成功、害怕失敗與無價值。注重形象、具有競爭心，為家庭期待而表現，隱藏脆弱，為在社交圈中贏而調整自己。",
     outlook: "地位，家庭認可。",
-    achievement: "狡猾、能幹，修復了萬應室裏的消失衣櫃作為食死人進入霍格華茲的入口、洗心革面。"
+    achievement: "史萊哲林的級長，狡猾、能幹，修復了萬應室裏的消失衣櫃作為食死人進入霍格華茲的入口、洗心革面。"
   },
   Challenger: {
     cn: "佛地魔（湯姆·瑞斗）",
     en: "Lord Voldemort",
     img: "r8v.png",
-    appearance: "外貌令人印象深刻，求學時期：英俊，有黑髮/黑眼睛、伏地魔時期：蒼白、禿頭、裂縫狀鼻孔、紅色眼睛、高大骨瘦如柴。",
+    appearance: "外貌令人印象深刻，求學時期：英俊，有黑髮黑眼睛。伏地魔時期：蒼白、禿頭、裂縫狀鼻孔、紅色眼睛、高大骨瘦如柴。",
     personality: "性格人所共知，是支配欲強、冷酷、具有吸引力、偏執。",
     motive: "因應情景不同，行動可能不一樣，但行事動機總離不開尋求控制與無敵感、害怕軟弱與被制服。支配並恐嚇他人，拒絕脆弱（甚至死亡），消除威脅以維持絕對權力。",
     outlook: "權力，影響他人，改變環境、征服死亡。",
-    achievement: "創造多個分靈體、佔領魔法部與霍格華茲。"
+    achievement: "魔法大師，創造多個分靈體、佔領魔法部與霍格華茲。"
   },
   Enthusiast: {
     cn: "天狼星·布萊克",
     en: "Sirius Black",
     img: "r7s.png",
-    appearance: "外貌令人印象深刻，高而瘦、英俊，高顴骨、灰色眼睛、長黑髮、入獄後變得憔悴，之後仍稍顯襤褸。",
+    appearance: "外貌令人印象深刻，高而瘦、英俊，高顴骨、灰色眼睛、長黑髮。入獄後變得憔悴，之後仍稍顯襤褸。",
     personality: "性格人所共知，是大膽、機智、難以安定、衝動、忠誠如鐵。",
-    motive: "因應情景不同，行動可能不一樣，但行事動機總離不開渴望自由、選擇與刺激、害怕陷入痛苦。衝動反叛，用幽默與行動來逃避不適，並在受限制或束縛下感到不安。",
+    motive: "因應情景不同，行動可能不一樣，但行事動機總離不開渴望自由、選擇與刺激、害怕陷入痛苦。衝動反叛，用幽默與行動來逃避不適，不喜歡受限制或束縛。",
     outlook: "追求自由不從眾、拒絕傳統家庭信念、價值觀和社會期望。",
     achievement: "未登記的化獸師、逃出阿茲卡班、重要鳳凰會成員、哈利的導師、戰死於戰鬥。"
   }
@@ -281,10 +282,10 @@ submitBtn.addEventListener('click', function(){
     + '<div class="type-title">' + (info.cn || top) + ' — ' + (info.en || '') + '</div>'
 + imgHtml
     + '<div style="margin-top:8px;"><strong> </strong><div style="color:#444;margin-top:6px;">' + (info.appearance || '') + '</div></div>'
-    + '<div style="margin-top:10px;"><strong>自己的至高原則 </strong><div style="color:#444;margin-top:6px;">' + (info.outlook || '') + '</div></div>'
     + '<div style="margin-top:10px;"><strong> </strong><div style="color:#444;margin-top:6px;">' + (info.motive || '') + '</div></div>'
 
     + '<div style="margin-top:10px;"><strong> </strong><div style="color:#444;margin-top:6px;">' + (info.personality || '') + '</div></div>'
+        + '<div style="margin-top:10px;"><strong>自己的至高原則 </strong><div style="color:#444;margin-top:6px;">' + (info.outlook || '') + '</div></div>'
     + '<div style="margin-top:10px;"><strong>最為人所知的成就 </strong><div style="color:#444;margin-top:6px;">' + (info.achievement || '') + '</div></div>'
     ;
 
